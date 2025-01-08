@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 100vh;          /* Sets the height of the body to the full viewport */
+    background-color: #f0f0f0; /* Optional: Adds a subtle background color */
+}
+
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px; /* Optional: Adds rounded corners for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px; /* Adds spacing below the input field */
+    border: 1px solid black;
+    outline: none;
+}
+
+button {
+    font-size: 30px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    height: 300px;
+}
